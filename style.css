@@ -1,0 +1,71 @@
+body {
+	background-color: #FFAC4B;
+}
+
+/*Smartwatch*/
+@media (min-width: 300px) 	{
+	
+	body {
+		background-color: tomato;
+	}
+
+.container 	{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(8, 1fr);
+   }
+}
+
+/*Telefonos*/
+@media (min-width: 600px) 	{
+	
+	body {
+		background-color: plum;
+	}
+
+.container 	{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+   }
+}
+
+/*Para Pc/ Laptop*/
+@media (min-width: 900px) 	{
+	
+	body {
+		background-color: firebrick;
+	}
+
+.container 	{
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr;
+   }
+}
+
+/*Tablets*/
+@media (min-width: 900px) 	{
+	
+	body {
+		background-color: mediumslateblue;
+	}
+
+.container 	{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 2fr;
+   }
+}
+
+.grid-item 	{
+  height: auto;
+  margin: 4px;
+  text-align: center;
+}
+
+.grid-item img	{
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+} 
